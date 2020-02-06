@@ -63,118 +63,135 @@ This script processes raw fasta inputs to generate single-stranded consensus seq
          --r2_fastq     - File containing Illumina read 2  sequences. Can be gzipped.
 
    Output Name
-         --output
-         Base name for all output files (additional extensions will be added)
+         --output       - Base name for all output files (additional extensions will be added)
    
    
    OPTIONAL ARGUMENTS
  
    Minimum SSCS Family Size
-         --min_sscs [default: 3]      
-         Minimum number of reads in a family to generate a single-stranded
-         consensus sequence
+         --min_sscs      - Minimum number of reads in a family to generate a single-stranded consensus sequence [default: 3]
 
    Minimum agreement to call SSCS base
-         --min_agree [default: 0.8]      
-         Proportion of reads within a read family that must agree to make an 
-         SSCS base call.
+         --min_agree     - Proportion of reads within a read family that must agree to make an SSCS base call. [default: 0.8]
 
    Minimum SSCS applied to only one strand
+   
          --min_sscs_one_strand [default: off]      
          Add this flag if min SSCS read number is only required for one of the
          two complementary read families (i.e., a double-stranded consensus can 
          be built with only a single read in the complementary family).
 
    Cutadapt Executable
+   
          --cutadapt_exe [default: cutadapt]      
          Full path to cutadapt if not in default PATH
 
    Cutadapt R1 Adapter
+   
          --cutadapt_adap1 [default: AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC]   
          Adapter sequences to trim from read 1
 
    Cutadapt R2 Adapter
+   
          --cutadapt_adap2 [default: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT]   
          Adapter sequences to trim from read 2
 
    Cutadapt Error Tolerance
+   
          --cutadapt_err_tol [default: 0.15]   
          Error tolerance for cutadapt trimming
 
    Cutadapt Cores
+   
          --cutadapt_cores [default: 4]   
          Number of cores to request for cutadapt step. This may need to be set
          to 1 if using a cutadapt version with Python v2.
 
    Cutadapt Minimum Length
+   
          --cutadapt_min_len [default: 75]   
          Value for minimum_length parameter in cutadapt
 
    Cutadapt Quality Score for Trimming
+   
          --cutadapt_trimq [default: 20]   
          Quality score used for q parameter in cutadapt
          
    Turn Off Cutadapt Trimming
+   
          --disable_cutadapt 
          Add this flag to turn off primer trimming with cutadapt.
 
    BBmerge Executable
+   
          --bbmerge_exe [default: bbmerge.sh]      
          Full path to bbmerge.sh if not in default PATH
          
    BBmerge Minimum Overlap
+   
          --bbmerge_minoverlap [default: 30]   
          Sequence length for minoverlap parameter in bbmerge.sh
 
    BBmerge Mismatches
+   
          --bbmerge_mismatches [default: 5]   
          Maximum number of mismathces for mismatches parameter in bbmerge.sh
    
    Random Barcode Length
+   
          --barcode_len [default: 12] 
          Number of Ns in the random barcode (unique molecular identifier) at
          beginning of each read.
 
    Linker Sequence
+   
          --linker [default: TGACT] 
          Number of Ns in the random barcode (unique molecular identifier) at
          beginning of each read.
  
    Disable Repetitive Barcode Filter
+   
     	--disable_rep_filter
     	Add this flag to turn off the default filter that excludes reads with
     	barcodes that are just one long homopolymer (e.g. AAAAAAAAAAAA).
 
    Disable Filtering of Barcodes with Ns
     	--disable_n_filter
+    	
     	Add this flag to turn off the default filter that excludes reads with
     	barcodes that contain an N.
 
-   Exclude Reads with Low Barcode Quality   
+   Exclude Reads with Low Barcode Quality
+    
     	--min_barcode_qual [default: 20]
     	Discard reads that have basecalls in barcode with quality value lower
     	than this.
     	
    Illumina Phred Quality Score Version  
+   
     	--phred_offset [default: 33]
     	ASCII offset value for quality score encoding. 33 is standard for
     	current Illumina runs.
 
    Delete Fastq Files
+   
     	--delete_intermediate_fastqs
     	Add this flag to delete the large intermediate fastq files and only
     	save the final fasta consensus sequence files.
 
    Combine DCS Fasta Output Files
+   
     	--combine_dcs
     	Add this flag to print all DCS output to a single fasta file
     	regardless of whether they were merged by bbmerge.
 
    Suppress SSCS Fasta Output Files
+   
     	--suppress_sscs
     	Add this flag to avoid producing SSCS fasta output.
 
    Filtering Optical Duplicates    
+   
     	--min_optical_dist [default: 0]
     	Minimum pixel distance for retaining a read with the same barcode as 
     	another read on the same tile within the same Illumina flow cell.
