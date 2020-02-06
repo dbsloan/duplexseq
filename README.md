@@ -52,15 +52,17 @@ This script processes raw fasta inputs to generate single-stranded consensus seq
 
 `perl duplexseq_process_reads.pl [options/arguments]`
 
-REQUIRED ARGUMENTS
+   REQUIRED ARGUMENTS
    
-R1 Fastq File
-    --r1_fastq     - File containing Illumina read 1 sequences. Can be gzipped.
-   
-R2 Fastq File
-    --r2_fastq     - File containing Illumina read 2  sequences. Can be gzipped.
+   R1 Fastq File
 
-Output Name
+         --r1_fastq     - File containing Illumina read 1 sequences. Can be gzipped.
+   
+   R2 Fastq File
+
+         --r2_fastq     - File containing Illumina read 2  sequences. Can be gzipped.
+
+   Output Name
          --output
          Base name for all output files (additional extensions will be added)
    
