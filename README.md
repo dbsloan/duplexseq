@@ -78,12 +78,14 @@ This script processes raw fasta inputs to generate single-stranded consensus seq
    Minimum SSCS Family Size
    
          --min_sscs [default: 3]
-         Minimum number of reads in a family to generate a single-stranded consensus sequence 
+         Minimum number of reads in a family to generate a single-stranded
+         consensus sequence 
 
    Minimum agreement to call SSCS base
    
          --min_agree [default: 0.8]
-         Proportion of reads within a read family that must agree to make an SSCS base call. 
+         Proportion of reads within a read family that must agree to make an
+         SSCS base call. 
 
    Minimum SSCS applied to only one strand
    
@@ -635,6 +637,6 @@ This script takes an input file that contains a simple list of SNP files generat
 
 This script is called with two arguments:
 
-`perl duplexseq_snp_classification.pl  snp_file  >  output_file`
+`perl duplexseq_snp_classification.pl  snp_file  coord_map_file  >  output_file`
 
 Where `snp_file` is the output file from `duplexseq_snps_post_processing.pl` and `coord_map_file` is a custom format describing the annotate features of the reference genome in a site-by-site fashion. See `NC_037304.coordmap.txt` and `NC_000932.mod28673.coordmap.txt` for examples from the *Arabidopsis thaliana* mitochondrial and plastid genomes, respectively, in the `example_files` subdirectory.
