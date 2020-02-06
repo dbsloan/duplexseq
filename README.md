@@ -43,7 +43,7 @@ These scripts have been developed and run in a Linux CentOS6 environment, but we
 
 ## duplexseq_batchscripts.pl
 
-This script is called with a single input:
+This script can generate a set of commands in a separate shell script for each input library to automate calling of many of the scripts in the pipeline described above. It is called with a single input:
 
 `perl duplexseq_batchscripts.pl input_files.txt`
 
@@ -635,7 +635,7 @@ This script takes an input file that contains a simple list of SNP files generat
 
 ## duplexseq_snp_classification.pl
 
-This script is called with two arguments:
+This script adds functional annotation information to SNP files (gene names, synonymous/nonsynonymous, etc.). It is called with two arguments in the specified order on the command line:
 
 `perl duplexseq_snp_classification.pl  snp_file  coord_map_file  >  output_file`
 
