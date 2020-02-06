@@ -1,0 +1,6 @@
+msh1-CS3246_mut_cp_1.indels.txt
+msh1-CS3246_mut_cp_2.indels.txt
+msh1-CS3246_mut_cp_3.indels.txt
+msh1-CS3246_wt_cp_1.indels.txt
+msh1-CS3246_wt_cp_2.indels.txt
+msh1-CS3246_wt_cp_3.indels.txt

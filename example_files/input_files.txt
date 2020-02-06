@@ -1,0 +1,7 @@
+msh1-CS3246_mut_cp_1	mut_cp_1_S37_L001_R1_001.fastq.gz	mut_cp_1_S37_L001_R2_001.fastq.gz	refs_cp28673mod.fas
+msh1-CS3246_mut_cp_2	mut_cp_2_S39_L001_R1_001.fastq.gz	mut_cp_2_S39_L001_R2_001.fastq.gz	refs_cp28673mod.fas
+msh1-CS3246_mut_cp_3	mut_cp_3_S41_L001_R1_001.fastq.gz	mut_cp_3_S41_L001_R2_001.fastq.gz	refs_cp28673mod.fas
+msh1-CS3246_wt_cp_1	wt_cp_1_S36_L001_R1_001.fastq.gz	wt_cp_1_S36_L001_R2_001.fastq.gz	refs_cp28673mod.fas
+msh1-CS3246_wt_cp_2	wt_cp_2_S38_L001_R1_001.fastq.gz	wt_cp_2_S38_L001_R2_001.fastq.gz	refs_cp28673mod.fas
+msh1-CS3246_wt_cp_3	wt_cp_3_S40_L001_R1_001.fastq.gz	wt_cp_3_S40_L001_R2_001.fastq.gz	refs_cp28673mod.fas
+

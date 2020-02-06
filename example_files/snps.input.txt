@@ -1,0 +1,6 @@
+msh1-CS3246_mut_cp_1.snps.txt
+msh1-CS3246_mut_cp_2.snps.txt
+msh1-CS3246_mut_cp_3.snps.txt
+msh1-CS3246_wt_cp_1.snps.txt
+msh1-CS3246_wt_cp_2.snps.txt
+msh1-CS3246_wt_cp_3.snps.txt
