@@ -56,23 +56,31 @@ This script processes raw fasta inputs to generate single-stranded consensus seq
    
    R1 Fastq File
 
-         --r1_fastq     - File containing Illumina read 1 sequences. Can be gzipped.
+         --r1_fastq
+         File containing Illumina read 1 sequences. Can be gzipped.
    
    R2 Fastq File
 
-         --r2_fastq     - File containing Illumina read 2  sequences. Can be gzipped.
+         --r2_fastq
+         File containing Illumina read 2  sequences. Can be gzipped.
 
    Output Name
-         --output       - Base name for all output files (additional extensions will be added)
+   
+         --output
+         Base name for all output files (additional extensions will be added)
    
    
    OPTIONAL ARGUMENTS
  
    Minimum SSCS Family Size
-         --min_sscs      - Minimum number of reads in a family to generate a single-stranded consensus sequence [default: 3]
+   
+         --min_sscs [default: 3]
+         Minimum number of reads in a family to generate a single-stranded consensus sequence 
 
    Minimum agreement to call SSCS base
-         --min_agree     - Proportion of reads within a read family that must agree to make an SSCS base call. [default: 0.8]
+   
+         --min_agree [default: 0.8]
+         Proportion of reads within a read family that must agree to make an SSCS base call. 
 
    Minimum SSCS applied to only one strand
    
