@@ -631,4 +631,10 @@ This script takes an input file that contains a simple list of SNP files generat
          --min_rep_len [default = 100]
          The minimum length of a perfect repeat to be used in repeat mapping.
 
+## duplexseq_snp_classification.pl
 
+This script is called with two arguments:
+
+`perl duplexseq_snp_classification.pl  snp_file  >  output_file`
+
+Where `snp_file` is the output file from `duplexseq_snps_post_processing.pl` and `coord_map_file` is a custom format describing the annotate features of the reference genome in a site-by-site fashion. See `NC_037304.coordmap.txt` and `NC_000932.mod28673.coordmap.txt` for examples from the *Arabidopsis thaliana* mitochondrial and plastid genomes, respectively, in the `example_files` subdirectory.
