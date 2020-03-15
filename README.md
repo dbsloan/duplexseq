@@ -643,6 +643,7 @@ This script takes an input file that contains a simple list of coverage stats fi
    REQUIRED ARGUMENTS
    
    Input File List
+
          --input
          Name (and path if not in local directory) of file containing a list
          of cov_stats output files from duplexseq_sam_to_snps.pl. There should
@@ -652,6 +653,7 @@ This script takes an input file that contains a simple list of coverage stats fi
          file names.
    
    Output Name
+
          --output
          Name of output file
    
@@ -659,6 +661,7 @@ This script takes an input file that contains a simple list of coverage stats fi
    OPTIONAL ARGUMENTS
  
    Path to Input Coverage Files
+
          --input_path   
          If the input cov files are not in the local directory and their full
          path is not specified in the file provided with the --input argument,
@@ -668,6 +671,7 @@ This script takes an input file that contains a simple list of coverage stats fi
          path should be provided as part of the --input option if necessary).
 
    Minimum Read Position
+
          --min_read_pos [default: 1]      
          This filter will exclude coverage found near the ends of reads. For
          example, setting this parameter to 11 will effectively remove any 
